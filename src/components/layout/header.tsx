@@ -2,11 +2,16 @@ import Image from "next/image";
 import { ChevronRight, MapPin, User } from "lucide-react";
 import { Input } from "../ui/input";
 
-export default function Header() {
+function Header() {
   return (
     <header className="p-4 bg-purple-500">
       <div className="mb-4 flex items-center justify-between">
-        <Image src="/images/logo.svg" alt="Logo" width={32} height={32} />
+        <Image
+          src="/images/logos/aiqfome.svg"
+          alt="Logo"
+          width={32}
+          height={32}
+        />
 
         <div className="flex gap-2.5 items-center">
           <MapPin size={24} color="white" />
@@ -34,3 +39,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header };
