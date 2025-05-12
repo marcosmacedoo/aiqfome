@@ -1,5 +1,10 @@
+import Header from "@/components/layout/header";
+
 export default function Home() {
   return (
-    <h1>Aiqfome</h1>
+    <>
+      <Header />
+      <h1>Home</h1>
+    </>
   );
 }
