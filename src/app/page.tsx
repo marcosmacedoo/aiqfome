@@ -1,6 +1,5 @@
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
-import { StoreList } from "@/features/stores/components/store-list";
+import { Footer, Header } from "@/components/layout";
+import { StoreList } from "@/features/stores/components";
 import Image from "next/image";
 
 export default function Home() {
