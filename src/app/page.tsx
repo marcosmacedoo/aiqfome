@@ -16,13 +16,11 @@ export default function Home() {
       />
       <section className="px-4 py-6">
         <h2 className="font-extrabold text-xl text-purple-500">abertos</h2>
-
         <StoreList />
       </section>
 
       <section className="px-4 py-6">
         <h2 className="font-extrabold text-xl text-purple-500">fechados</h2>
-
         <StoreList />
       </section>
 

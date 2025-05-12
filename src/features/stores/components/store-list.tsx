@@ -8,6 +8,7 @@ const stores = [
     logo: "/images/logos/subway.svg",
     rating: 4.1,
     freightPrice: 0,
+    isOpen: true,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const stores = [
     logo: "/images/logos/mcdonalds.svg",
     rating: 4.7,
     freightPrice: 12,
+    isOpen: true,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const stores = [
     logo: "/images/logos/burger-king.svg",
     rating: 4.9,
     freightPrice: 0,
+    isOpen: false,
   },
 ];
 

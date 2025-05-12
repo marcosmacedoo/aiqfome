@@ -7,6 +7,7 @@ type Store = {
   logo: string;
   rating: number;
   freightPrice: number;
+  isOpen: boolean;
 };
 
 type StoreItemProps = {
@@ -15,7 +16,9 @@ type StoreItemProps = {
 
 function StoreItem({ store }: StoreItemProps) {
   return (
-    <div className="h-[72px] flex gap-3 items-center bg-neutral-50 rounded-lg hover:bg-neutral-200 transition-all duration-300">
+    <div
+      className={`${!store.isOpen ? "opacity-50" : ""} h-[72px] flex gap-3 items-center bg-neutral-50 rounded-lg hover:bg-neutral-200 transition-all duration-300`}
+    >
       <Image
         src={store.logo}
         alt={`Logo ${store.name}`}
