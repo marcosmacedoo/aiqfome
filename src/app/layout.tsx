@@ -4,13 +4,14 @@ import "@/styles/globals.css";
 
 const fontNunito = Nunito({
   variable: "--font-nunito",
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "O melhor delivery de tudo é no aiqfome",
-  description: "Peça comida, bebidas, mercado, farmácia, padaria, pet shop e muito mais pelo maior aplicativo de delivery do interior. Baixe o app agora mesmo!",
+  description:
+    "Peça comida, bebidas, mercado, farmácia, padaria, pet shop e muito mais pelo maior aplicativo de delivery do interior. Baixe o app agora mesmo!",
 };
 
 export default function RootLayout({
@@ -20,11 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${fontNunito.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${fontNunito.variable} antialiased`}>{children}</body>
     </html>
   );
 }

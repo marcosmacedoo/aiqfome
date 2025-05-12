@@ -1,7 +1,14 @@
+import { Header } from "@/components/layout";
+import { CardTotalPrice } from "@/features/ticket/components/card-total-price";
+
 export default function Ticket() {
   return (
     <>
-      <h1>Ticket</h1>
+      <Header />
+      <main>
+        <h1>Ticket</h1>
+      </main>
+      <CardTotalPrice />
     </>
   );
 }
