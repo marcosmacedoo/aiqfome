@@ -2,10 +2,14 @@ import Image from "next/image";
 import { ChevronRight, MapPin, User } from "lucide-react";
 import { Input } from "../ui/input";
 
-function Header() {
+type HeaderProps = {
+  shouldShowSearchInput?: boolean;
+};
+
+function Header({ shouldShowSearchInput = false }: HeaderProps) {
   return (
     <header className="p-4 bg-purple-500">
-      <div className="mb-4 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <Image
           src="/images/logos/aiqfome.svg"
           alt="Logo"
@@ -32,10 +36,12 @@ function Header() {
         <User size={24} color="white" />
       </div>
 
-      <Input
-        className="bg-white h-10"
-        placeholder="busque pela loja ou culinária"
-      />
+      {shouldShowSearchInput && (
+        <Input
+          className="bg-white h-10 mt-4"
+          placeholder="busque pela loja ou culinária"
+        />
+      )}
     </header>
   );
 }
