@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ChevronRight, MapPin, User } from "lucide-react";
 import { Input } from "../ui/input";
+import Link from "next/link";
 
 type HeaderProps = {
   shouldShowSearchInput?: boolean;
@@ -10,12 +11,14 @@ function Header({ shouldShowSearchInput = false }: HeaderProps) {
   return (
     <header className="p-4 bg-purple-500">
       <div className="flex items-center justify-between">
-        <Image
-          src="/images/logos/aiqfome.svg"
-          alt="Logo"
-          width={32}
-          height={32}
-        />
+        <Link href="/">
+          <Image
+            src="/images/logos/aiqfome.svg"
+            alt="Logo"
+            width={32}
+            height={32}
+          />
+        </Link>
 
         <div className="flex gap-2.5 items-center">
           <MapPin size={24} color="white" />
