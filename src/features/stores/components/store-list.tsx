@@ -32,7 +32,7 @@ function StoreList() {
   return (
     <div className="mt-4 flex flex-col gap-4">
       {stores.map((store) => (
-        <Link key={store.id} href={`/stores/${store.id}`}>
+        <Link key={store.id} href={`/store/${store.id}`}>
           <StoreItem key={store.id} store={store} />
         </Link>
       ))}
