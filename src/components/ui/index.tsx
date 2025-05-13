@@ -3,3 +3,8 @@ export * from "./input";
 export * from "./note";
 export * from "./separator";
 export * from "./accordion";
+export * from "./badge";
+export * from "./radio-group";
+export * from "./label";
+export * from "./checkbox";
+export * from "./textarea";

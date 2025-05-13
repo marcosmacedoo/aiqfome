@@ -4,7 +4,7 @@ import { Catalog } from "@/features/stores/components";
 import { BikeIcon, ChevronRight, Dot, Heart, Share2, Star } from "lucide-react";
 import Image from "next/image";
 
-export default function StoreDetails() {
+export default function StoreDetailsPage() {
   return (
     <div className="min-h-dvh flex flex-col">
       <Header />
