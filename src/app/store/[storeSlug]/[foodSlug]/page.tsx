@@ -8,6 +8,7 @@ import {
   Label,
   Checkbox,
   Textarea,
+  BackButton,
 } from "@/components/ui";
 import Image from "next/image";
 
@@ -26,6 +27,8 @@ export default function FoodDetailsPage() {
 
         <article className="p-4">
           <header className="space-y-2">
+            <BackButton href="/store/burger-king">voltar</BackButton>
+
             <h1 className="font-bold text-xl text-neutral-700">
               Ceviche de salmão
             </h1>

@@ -1,8 +1,9 @@
 import { Footer, Header } from "@/components/layout";
-import { Note, Button } from "@/components/ui";
+import { Note, Button, BackButton } from "@/components/ui";
 import { Catalog } from "@/features/stores/components";
 import { BikeIcon, ChevronRight, Dot, Heart, Share2, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function StoreDetailsPage() {
   return (
@@ -10,6 +11,8 @@ export default function StoreDetailsPage() {
       <Header />
 
       <main className="px-4 py-6 flex-1">
+        <BackButton href="/">voltar</BackButton>
+
         <div className="flex gap-2 items-center">
           <Image
             src={"/images/logos/burger-king.svg"}
@@ -76,6 +79,13 @@ export default function StoreDetailsPage() {
         </p>
 
         <Catalog />
+
+        <Link
+          href="/store/burger-king/camarao"
+          className="text-neutral-900 font-extrabold inline-block mb-4"
+        >
+          IR para item
+        </Link>
       </main>
 
       <Footer />

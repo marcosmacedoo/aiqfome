@@ -8,3 +8,4 @@ export * from "./radio-group";
 export * from "./label";
 export * from "./checkbox";
 export * from "./textarea";
+export * from "./back-button";
