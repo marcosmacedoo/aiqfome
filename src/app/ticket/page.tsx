@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout";
+import { BackButton } from "@/components/ui";
 import { FoodList, CardTotalPrice } from "@/features/ticket/components";
 import Image from "next/image";
 
@@ -7,7 +8,11 @@ export default function Ticket() {
     <>
       <Header />
       <main>
-        <div className="mt-6 px-4 flex items-center gap-2">
+        <BackButton href="/store/burger-king" className="mx-4 mt-6">
+          voltar
+        </BackButton>
+
+        <div className="px-4 flex items-center gap-2">
           <Image
             src={"/images/logos/burger-king.svg"}
             width={48}

@@ -11,6 +11,7 @@ import {
   BackButton,
 } from "@/components/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FoodDetailsPage() {
   return (
@@ -181,6 +182,8 @@ export default function FoodDetailsPage() {
           />
         </article>
       </main>
+
+      <Link href="/ticket">ver ticket</Link>
 
       <Footer />
     </div>
